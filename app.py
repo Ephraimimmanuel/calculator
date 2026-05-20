@@ -1,23 +1,18 @@
-# Simple Calculator in Python
+def add(a, b):
+    return a + b
 
-num1 = float(input("Enter first number: "))
-operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
+def subtract(a, b):
+    return a - b
 
-if operator == "+":
-    print("Result:", num1 + num2)
+def multiply(a, b):
+    return a * b
 
-elif operator == "-":
-    print("Result:", num1 - num2)
+def divide(a, b):
+    return a / b
 
-elif operator == "*":
-    print("Result:", num1 * num2)
 
-elif operator == "/":
-    if num2 != 0:
-        print("Result:", num1 / num2)
-    else:
-        print("Cannot divide by zero")
-
-else:
-    print("Invalid operator")
+# Example execution
+print("Addition:", add(10, 5))
+print("Subtraction:", subtract(10, 5))
+print("Multiplication:", multiply(10, 5))
+print("Division:", divide(10, 5))
